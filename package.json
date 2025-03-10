@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/shishamchudal/m3-w2-d1-exercise/issues"
   },
-  "homepage": "https://github.com/shishamchudal/m3-w2-d1-exercise#readme"
+  "homepage": "https://github.com/shishamchudal/m3-w2-d1-exercise#readme",
+  "dependencies": {
+    "mongodb": "^6.14.2"
+  }
 }
