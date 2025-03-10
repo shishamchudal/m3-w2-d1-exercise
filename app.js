@@ -66,7 +66,7 @@ client
     //   .find(query)
     //   .toArray()
     //   .then((items) => {
-    //     console.log("Successfully found ${items. length} documents.");
+    //     console.log(`Successfully found ${items. length} documents.`);
     //     console.log(items);
     //     client.close();
     //   });
