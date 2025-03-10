@@ -83,12 +83,22 @@ client
     //     client.close();
     //   });
 
-    var myquery = { address: "Mountain 21" };
+    // var myquery = { address: "Mountain 21" };
+    // dbo
+    //   .collection("customers")
+    //   .deleteOne(myquery)
+    //   .then(function () {
+    //     console.log("1 document deleted");
+    //     client.close();
+    //   });
+
+    var myquery = { address: "Valley 345" };
+    var newvalues = { $set: { name: "Mickey", address: "Canyon 123" } };
     dbo
       .collection("customers")
-      .deleteOne(myquery)
+      .updateOne(myquery, newvalues)
       .then(function () {
-        console.log("1 document deleted");
+        console.log("1 document updated");
         client.close();
       });
   })
